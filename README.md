@@ -8,3 +8,10 @@ It can generate image dataset by:
 1. No of files needed
 2. Size of dataset
 3. Both, no of files and dataset
+
+Supported extensions:
+1. jpg/jpeg
+2. png
+3. gif
+
+Above choices can be given by entering values in interactive command line execution window. 
