@@ -11,9 +11,16 @@ import java.util.Set;
 import javax.imageio.ImageIO;
 
 /**
+ * Random Image Generator
  *
- * @author Darpan Dodiya <darpan.dodiya@pervacio.com>
+ * Simple command line based Java program to generate random images of different file formats.
+ *
+ * While doing one project, I needed sets of images to test. Generating such datasets manually is --well not something a programmer should do! :) 
+ * So I quickly wrote this tool.
+ *
+ * @author Darpan Dodiya <darpandodiya@gmail.com>
  */
+ 
 public class RandomImageGenerator {
 
     String[] supported_extensions = new String[]{"jpg", "png", "gif"};
@@ -136,6 +143,7 @@ public class RandomImageGenerator {
         Random rand = new Random();
         
         while (no_of_files > 0) {
+			//+100 so that image file will not end up with size less than 100px.
             width = rand.nextInt(2000) + 100;
             height = rand.nextInt(2000) + 100;
             generateImage(path);
