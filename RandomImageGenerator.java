@@ -28,6 +28,7 @@ public class RandomImageGenerator {
     public void startGenerator() {
         display("- - - - IMAGE DATASET GENERATOR - - - -\n");
 
+		//Keep running the program until user exits the tool. This will allow to generate multiple datasets at once. 
         while (true) {
             int approach;
             int no_of_files;
@@ -203,6 +204,7 @@ public class RandomImageGenerator {
         }
     }
     
+	//Mapping between image size and pixels needed
     HashMap<Integer, Integer> jpgHashmap = new HashMap<Integer, Integer>() {
         {
             put(100, 290);
@@ -218,6 +220,7 @@ public class RandomImageGenerator {
         }
     };
     
+	//Mapping between image size and pixels needed
     HashMap<Integer, Integer> pngHashmap = new HashMap<Integer, Integer>() {
         {
             put(100, 160);
@@ -283,9 +286,10 @@ public class RandomImageGenerator {
     int jumpInPixels[] = new int[] {100, 50, 25, 10, 5};
     
     public void dimensionEngine(int widthIn, int heightEngineIn, long sizeInBytes) {
-        
+        //Not implemented
     }
 
+	//Always generate unique name
     private Set<String> identifiers = new HashSet<>();
 
     private String generateName() {
