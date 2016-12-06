@@ -15,3 +15,6 @@ Supported extensions:
 3. gif
 
 Above choices can be given by entering values in interactive command line execution window. 
+
+
+Run the program via: java -jar RandomImageGenerator.jar
