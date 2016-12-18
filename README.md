@@ -1,6 +1,6 @@
-Random Image Generator
+# Random Image Generator
 
-Simple command line based Java program to generate random images of different file formats.
+Simple command line based Java program to generate dataset random valid images. Configured based on size, no of files or both. 
 
 While doing one project, I needed sets of images to test. Generating such datasets manually is --well not something a programmer should do! :) So I quickly wrote this tool. 
 
@@ -17,4 +17,6 @@ Supported extensions:
 Above choices can be given by entering values in interactive command line execution window. 
 
 
-Run the program via: java -jar RandomImageGenerator.jar
+# Run the program
+
+java -jar RandomImageGenerator.jar
